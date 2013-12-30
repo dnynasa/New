@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background:red;}
+</style>
+</head>
+<body>
+<p id="demo">Check the ISD!</p>
+<button type="button" onclick="myfunction()">Click Me!</button>
+<script>
+function myfunction()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+</script>
+</body>
+</html>
