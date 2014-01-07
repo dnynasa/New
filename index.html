@@ -3,17 +3,14 @@
 <head>
 <title>GeoApp</title>
 <style>
-body {background: Blue};
+body {background-image:url('Green'); Blue};
 </style>
 </head>
 <body>
 <p>Hello Buddies</p>
 <p>Start Exploring the GeoInfo...</p>
 <p id="demo">Get your coordinates:</p>
-<button onclick="getLocation()">Try It</button>
-<p id="demo">Get your position:</p>
-<button onclick="getLocation()">Try It</button>
-<div id="mapholder"></div>
+<button onclick="getLocation()">Check...</button>
 <script>
 var x=document.getElementById("demo");
 function getLocation()
@@ -38,7 +35,11 @@ function getLocation()
     }
   else{x.innerHTML="Geolocation is not supported by this browser.";}
   }
-
+</script>
+<p id="demo">Get your position:</p>
+<button onclick="getLocation()">Check...</button>
+<div id="mapholder"></div>
+<script>
 function showPosition(position)
   {
   var latlon=position.coords.latitude+","+position.coords.longitude;
